@@ -1,1 +1,8 @@
-# Reddragon300.github.io
+# Computer Science Student
+
+### Education
+
+
+### Work Experience 
+
+### Projects
