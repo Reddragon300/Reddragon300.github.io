@@ -1,0 +1,104 @@
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+    
+# plugins:
+
+exclude:
+  - readme.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+
+include:
+  - _pages
+  - _redirects
+  
+# Site settings
+title: Brandon Claspill
+long-title: Matt Grey Design
+email: bc157@lindenwood.edu
+description: "The selected portfolio of Brandon C. Claspill"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://hibrandon.com" # the base hostname & protocol for your site
+timezone: Chicago/Central
+year: 2024
+start-year: 2024
+sitemap: true
+show_downloads: true
+remote_theme: hydecorp/hydejack
+
+# Social networks
+social-username:
+  linkedin: "brandonclaspill"
+  github: "Reddragon300"
+
+# Content
+#image_serve_path: "/images" # <img src="{{ site.image_serve_path }}/projects/img.jpg">
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+
+# Sass output
+sass:
+  style: compressed # :nested :compact :expanded :compressed
+
+compress_html: # http://jch.penibelst.de/
+  enabled: true # compress html
+  clippings: all # clip safe tags
+  comments: []
+  endings: []
+  #ignore:
+    #envs: [local]
+  blanklines: false # boolean - strip blank lines and breaks
+  profile: false
+  startings: []
+
+
+# Structure
+navigation:
+  - title: Projects
+    url: /
+  - title: Fonts
+    url: /fonts
+  - title: About
+    url: /about
+  - title: Contact
+    url: /contact
+
+permalink: /:title/
+
+# Configure site collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  fonts:
+    output: true
+    permalink: /fonts/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "fonts"
+    values:
+      layout: "font"
+
+
+
+
+
+google_analytics_ua: 
+
+# Style Variables
+brand_color: "#DA253B"
