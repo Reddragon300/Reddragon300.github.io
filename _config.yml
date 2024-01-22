@@ -36,7 +36,7 @@ social-username:
   github: "Reddragon300"
 
 # Content
-#image_serve_path: "/images" # <img src="{{ site.image_serve_path }}/projects/img.jpg">
+image_serve_path: "assets/images" # <img src="{{ site.image_serve_path }}/projects/img.jpg">
 
 # Build settings
 markdown: kramdown
